@@ -9,7 +9,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: neu.edu.springcloud.provider.bean
+  type-aliases-package: edu.neu.springcloud.provider.bean
 
 logging:
   level:
@@ -18,6 +18,6 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka1.com:7001/eureka/, http://eureka2.com:7002/eureka/, http://eureka3.com:7003/eureka/
   instance:
     prefer-ip-address: true
